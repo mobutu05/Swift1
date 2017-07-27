@@ -79,6 +79,12 @@ let gene = """
 """
 
 //transform to eliminate spaces and numbers
-let nucleotides = "acgt"// ['a','c','g','t']
-//let transform = gene.filter {nucleotides.contains($0)}
-//print (transform)
+let nucleotides = "acgt"
+let transform = gene.filter {nucleotides.contains($0)}
+print (transform)
+
+let start  = "atg"
+
+let codon_table_11 = "FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG"
+
+
